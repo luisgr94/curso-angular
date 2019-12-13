@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  nombre = "Daniel";
-  arreglo = [1,2,3,4,5,6,7,8,9,10];
+  nombre = 'Daniel';
+  arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   PI = Math.PI;
 
@@ -16,19 +16,21 @@ export class AppComponent {
   salario = 1234.5;
 
   heroe = {
-    nombre : "Logan",
-    clave : "Wolverine",
+    nombre : 'Logan',
+    clave : 'Wolverine',
     edad : 500,
     direccion : {
-      calle : "Primera",
-      colonia : "La Nueva Esperanza",
+      calle : 'Primera',
+      colonia : 'La Nueva Esperanza',
       numero : 273
     }
-  }
+  };
 
   valorDePromesa = new Promise( (resolve, reject) => {
-    setTimeout( ()=>resolve('Llego la data!!'),3500 );
-  } )
+    setTimeout( () => resolve('Llego la data!!'), 3500 );
+  } );
+
+  nombre2 = 'luis daniel guerrero ramirez';
 
 
   fecha = new Date ();
